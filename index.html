@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./convert.css">
+    <title>Convertisseur Vitesse Allure</title>
+</head>
+
+<body>
+    <div class="converter-container">
+
+        <div class="allure">
+            <div class="converter__header">
+                <h2>Convertisseur Vitesse Allure</h2>
+            </div>
+            <div class="converter__body">
+                <div class="converter__body__input">
+                    <p class="vitesse">Entrez une vitesse en km/h</p>
+                    <input type="number" id="vitesse-input">
+                    <span>km/h</span>
+                </div>
+                <div class="converter__body__output">
+                    <p class="allure">Entrez une allure en mn par km</p>
+                    <input type="number" id="allure-mn">
+                    <span>mn</span>
+                    <input type="number" id="allure-sec" min=0 max=59 step="1">
+                    <span>sec</span>
+                </div>
+            </div>
+        </div>
+        <button class="converter__button" onclick="convert()">Convertir</button>
+    </div>
+
+    </div>
+    <script src="./convert.js"></script>
+</body>
+
+</html>
